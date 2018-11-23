@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
-import Media from './media.js'
+import React from 'react';
+import Media from './media.js'; 
 
-class Playlist extends Component {
-  state = {  }
-  render() {
-    console.log(this.props.data);
-    return (
-      <div>
-        <Media/>
-      </div>
-    );
-  }
+//Componente funcional -> containers -> Qué hace?, no tiene un ciclo de vida
+function Playlist(props){
+  const playlist = props.data.categories[0].playlist;
+  return (
+    <div>
+      {
+        playlist.map((item) => {
+          return <Media {...item} key={item.id} />
+        })
+      }
+    </div>
+  )
 }
 
 export default Playlist;
