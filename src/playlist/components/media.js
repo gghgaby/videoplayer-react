@@ -30,9 +30,7 @@ class Media extends PureComponent {
         <div className="Media-cover">
           <img 
             src={this.props.cover}
-            alt=""
-            width= {240}
-            height= {160}
+            alt={this.props.cover}
             className ="Media-image"
           />
           <h3 className="Media-title">{this.props.title}</h3>

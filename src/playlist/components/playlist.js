@@ -6,7 +6,7 @@ import Media from './media.js';
 //Componente funcional -> containers -> Qué hace?, no tiene un ciclo de vida
 function Playlist(props){
   return (
-    <div>
+    <div className="playlist__wrapper">
       {
         props.playlist.map((item) => {
           return <Media {...item} key={item.id} />
