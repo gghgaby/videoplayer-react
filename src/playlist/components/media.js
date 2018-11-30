@@ -24,6 +24,10 @@ class Media extends PureComponent {
     });
   }
 
+  componentDidMount(){
+    console.log('Im really!', this.props.id);
+  }
+
   render() {
     return (
       <div className="Media" onClick={this.fnHandleClick}>

@@ -5,5 +5,5 @@ import Home from '../pages/containers/home';
 import data from '../api.json';
 
 
-const app = document.getElementById('platziContainer');
-render(<Home data={data}/>, app); 
+const home = document.getElementById('platziContainer');
+render(<Home data={data}/>, home);   
