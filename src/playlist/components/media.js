@@ -3,34 +3,10 @@ import PropTypes from 'prop-types';
 import './media.css'
 
 class Media extends PureComponent {
-  state ={
-    author: 'Leonidas Esteban'
-  }
-  // constructor(props){
-  //   super(props);
-  //   this.state = {
-  //     author: props.author,
-  //   }
-  //   this.fnHandleClick = this.fnHandleClick.bind(this);
-  // }
-
-  // fnHandleClick (event){
-  //   console.log(this.props.title)
-  // }
-
-  fnHandleClick = (event) =>{
-    this.setState({
-      author: 'Ricardo Celis',
-    });
-  }
-
-  componentDidMount(){
-    console.log('Im really!', this.props.id);
-  }
 
   render() {
     return (
-      <div className="Media" onClick={this.fnHandleClick}>
+      <div className="Media" onClick={this.props.handleClick}>
         <div className="Media-cover">
           <img 
             src={this.props.cover}
