@@ -1,0 +1,13 @@
+.title{
+  position: absolute;
+  top:20px;
+  left:20px;
+  background-color: rgba(0,0,0,0.5);
+  color: #FFF;
+  padding: 10px 20px;
+}
+.title h2{
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+}

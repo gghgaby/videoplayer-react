@@ -1,14 +1,34 @@
 import React, {Component} from 'react';
+import './video.css';
 
 class Video extends Component {
-  state = {  }
+  togglePlay(){
+    if(this.props.pause){
+      this.video.play();
+    }else{
+      this.video.pause();
+    }
+  }
+
+  componentWillReceiveProps(nextProps){
+    if(nextProps.pause != this.props.pause){
+      this.togglePlay();
+    }
+  }
+
+  setRef=  element => {
+    this.video = element
+  }
+
   render() {
     return (
-      <video
-        controls
-        autoPlay
-        src="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4" 
-      />
+      <div className="videoWrapper">
+        <video
+          autoPlay={this.props.autoplay}
+          src={this.props.src}
+          ref={this.setRef}
+        />
+      </div>
     );
   }
 }

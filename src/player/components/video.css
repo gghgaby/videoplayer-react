@@ -1,0 +1,7 @@
+.videoWrapper{
+  width: inherit;
+}
+.videoWrapper video{
+  width: inherit;
+  vertical-align: middle;
+}
