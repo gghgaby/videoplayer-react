@@ -7,22 +7,27 @@
   left: 0;
   right: 0;
   top: 100px;
-  background-color: #FFF;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.096);
+  z-index: 1;
 }
 
 .modalClose{
-  width: 50px;
-  height: 50px;
+  width: 24px;
+  height: 24px;
   position: absolute;
-  right: -25px;
-  top: -25px;
+  right: -6px;
+  top: -6px;
   border-radius: 50%;
+  border: none;
+  background: #171c30;
+  color: #fff;
+  cursor: pointer;
 }
 
 .modalClose:after{
   content: "X";
   font-weight: bold;
-  font-size: 30px;
+  font-size: 18px;
 }
