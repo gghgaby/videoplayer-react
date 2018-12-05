@@ -21,12 +21,17 @@ class Video extends Component {
   }
 
   render() {
+    const { handledLoadedMetadata, handleTimeUpdate, handleSeeking, handleSeeked } = this.props;
     return (
       <div className="videoWrapper">
         <video
           autoPlay={this.props.autoplay}
           src={this.props.src}
           ref={this.setRef}
+          onLoadedMetadata={handledLoadedMetadata}
+          onTimeUpdate={handleTimeUpdate}
+          onSeeking={handleSeeking}
+          onSeeked={handleSeeked}
         />
       </div>
     );
