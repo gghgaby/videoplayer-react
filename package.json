@@ -1,7 +1,7 @@
 {
-  "name": "platzi-example",
-  "version": "1.0.0",
-  "description": "platzi-example",
+  "name": "videoplayer-react",
+  "version": "1.1.0",
+  "description": "videoplayer-react",
   "main": "webpack.config.js",
   "scripts": {
     "build:dev": "webpack-dev-server --config ./webpack.dev.config.js",
@@ -11,16 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/ghgaby/platzi-example.git"
+    "url": "ssh+git@github.com:gghbit/videoplayer-react.git"
   },
   "keywords": [
     "react"
   ],
   "author": "ggh.gabriela@gmail.com",
   "license": "MIT",
-  "bugs": {
-    "url": "https://gitlab.com/ghgaby/platzi-example/issues"
-  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
